@@ -13,8 +13,7 @@ interface pageProps{
     const Pagination = ({totalPages,currentPage,setCurrentPage}:pageProps) => {
       return (
         <div>
-            
-            <div className="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
+          <div className="flex items-center justify-between border-t border-gray-200 bg-white px-4 py-3 sm:px-6">
             <div className="flex flex-1 justify-between sm:hidden">
               <a
                 href="#"
@@ -36,8 +35,8 @@ interface pageProps{
                   aria-label="Pagination"
                 >
                   <button
-                   onClick={() => setCurrentPage(currentPage - 1)}
-                   disabled={currentPage == 1}
+                    onClick={() => setCurrentPage(currentPage - 1)}
+                    disabled={currentPage == 1}
                     className="relative inline-flex items-center rounded-l-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
                   >
                     <span className="sr-only">Previous</span>
@@ -61,8 +60,8 @@ interface pageProps{
                     {currentPage}
                   </p>
                   <button
-                   onClick={() => setCurrentPage(currentPage + 1)}
-                   disabled={currentPage == totalPages}
+                    onClick={() => setCurrentPage(currentPage + 1)}
+                    disabled={currentPage == totalPages}
                     className="relative inline-flex items-center rounded-r-md px-2 py-2 text-gray-400 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-20 focus:outline-offset-0"
                   >
                     <span className="sr-only">Next</span>
@@ -84,7 +83,7 @@ interface pageProps{
             </div>
           </div>
         </div>
-      )
+      );
     }
     
     export default Pagination
