@@ -35,8 +35,10 @@ const Signup = () => {
       toast.error(
         "Password must include one uppercase and atleast one number and mininum 8 character"
       );
+      return 
     } else if (password !== cPassword) {
       toast.error("Passwords are not matching");
+      return
     }
     const res = await signUp(name, email, password);
     if (res && res.data.status) {
