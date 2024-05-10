@@ -1,4 +1,4 @@
-  #MEMOMIND - Note keeper frontend
+  # MEMOMIND - Note keeper frontend
 
   A simple note taking web application built in React.js for the frontend and Express.js for the backend along with typescript.
 
