@@ -10,6 +10,7 @@
   -Redux
 
   Setup
+  
   1.Install dependencies: Run npm install in the root directory to install all     
   required dependencies.
   2.Start development server: Run npm run dev to start the development server. The 
