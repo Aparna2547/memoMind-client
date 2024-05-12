@@ -98,3 +98,13 @@ export const deleteNote = async (id: number) => {
     errorHandle(error as Error);
   }
 };
+
+
+export const userlogout = async () => {
+  try {
+    const res = await Api.get(`/api/users/logout`);
+    return res;
+  } catch (error) {
+    errorHandle(error as Error);
+  }
+};

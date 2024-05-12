@@ -8,6 +8,7 @@ import { initFlowbite } from "flowbite";
 import { toast } from "sonner";
 import { Link } from "react-router-dom";
 import { MdAddToHomeScreen } from "react-icons/md";
+import { userlogout } from "../apis/user";
 
 const Sidebar = () => {
   useEffect(() => {
@@ -16,6 +17,7 @@ const Sidebar = () => {
   const dispatch = useDispatch();
 
   const handleLogout = async () => {
+     await userlogout()
     dispatch(logout());
     toast.success("logged out successfully");
   };
