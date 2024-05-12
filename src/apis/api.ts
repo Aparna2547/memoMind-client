@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseUrl = "http://localhost:3000";
+const baseUrl = "https://memomind-server.onrender.com";
 
 const Api = axios.create({ baseURL: baseUrl, withCredentials: true });
 

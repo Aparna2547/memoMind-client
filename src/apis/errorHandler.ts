@@ -13,7 +13,7 @@ const errorHandle = (error: Error | AxiosError) => {
       toast.error(errorResponse.message);
     }
   } else {
-    toast.error("An error occured . check your internet");
+    toast.error("server is connecting.Please wait");
   }
 };
 

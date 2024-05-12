@@ -32,6 +32,7 @@ const Home = () => {
   useEffect(() => {
     const fetchNote = async () => {
       const res = await getNotes(searchTerm, currentPage);
+      console.log(res)
       if (res?.data) {
         setTotalPages(res.data.totalPages);
         const filteredNotes = res.data.allNotes.filter(

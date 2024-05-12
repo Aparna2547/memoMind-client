@@ -46,7 +46,7 @@ const Signup = () => {
     }
   };
   return (
-    <div className="flex justify-center items-center bg-violet-400 h-full">
+    <div className="flex justify-center items-center bg-violet-400 h-full min-h-[100vh]">
       <div className="">
         <section className="relative block h-500-px bg-violet-400"></section>
         <section>
